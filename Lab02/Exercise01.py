@@ -66,27 +66,77 @@ print("\nTake a substring of this string:", "\"" + test_string + "\"",
 # test_string[3] = "i"
 
 
-
-
-
-
-
-
 ### WORKING WITH NUMBERS ###
 first_number = 5
 second_number = 2
-
 
 print(f"{first_number} divided by {second_number} is {first_number / second_number}")
 print(f"{first_number} multiplied by {second_number} is {first_number * second_number}")
 print(f"{first_number} raised to the power of {second_number} is {first_number ** second_number}")
 print(f"The remainder of {first_number} divided by {second_number} is {first_number % second_number}")
-
+print()
 # TypeError: can only concatenate str (not "int") to str
 # will_give_an_error = string1 + first_number
 # Typecast in order to concatenate this number to the string
 will_not_give_an_error = string1 + str(first_number)
 print(will_not_give_an_error)
+print()
+
+### ASKING FOR INPUT ###
+n1 = input("Enter the first number: ")
+n2 = input("Enter the second number: ")
+n3 = float(n1) + float(n2)
+print("{:s} + {:s} = {:5.0f}".format(n1, n2, n3))
+
+### STRING FORMATTING ###
+a = 1 / 3
+print("{:7.3f}".format(a))
+
+a = 2 / 3
+b = 2 / 9
+print("{:7.3f} {:7.3f}".format(a, b))
+print("{:10.3e} {:10.3e}".format(a, b))
+print()
+
+### LISTS ###
+list1 = [82, 8, 23, 97, 92, 44, 17, 39, 11, 12]
+print(dir(list1))
+
+help(list1.insert)
+# insert(index, object, /) method of builtins.list instance
+#     Insert object before index.
+help(list1.append)
+# append(object, /) method of builtins.list instance
+#     Append object to the end of the list.
+help(list1.sort)
+# sort(*, key=None, reverse=False) method of builtins.list instance
+#     Sort the list in ascending order and return None.
+help(list1.remove)
+# remove(value, /) method of builtins.list instance
+#     Remove first occurrence of value.
+
+# Change values in the list accessing it via index
+import random
+
+for i in range(0, len(list1)):
+    list1[i] = random.randint(0, 100)
+print(list1)
+
+# Append a random value to the list
+value = random.randint(0, 100)
+list1.append(value)
+if list1.__contains__(value):
+    list1.remove(value)
+    print(f"{value} removed from the list")
+
+# Remove the last value in the list
+remove_me = list1[len(list1) - 1]
+print("Last value in the list:", remove_me)
+print("Before:", list1)
+list1.remove(remove_me)
+print("After:", list1)
+
+
 
 
 
