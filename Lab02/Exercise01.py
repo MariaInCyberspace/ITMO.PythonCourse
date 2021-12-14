@@ -201,6 +201,20 @@ another_dict['Age'] = age
 print(another_dict)
 
 
+# Nested data
+
+record = {
+    'name': {'first_name': 'Sylvia', 'last_name': 'Stern'},
+    'job': ['dev', 'mgr'],
+    'age': 34
+}
+
+print(f"\nFull name: {record['name']['first_name'], record['name']['last_name']}"
+      f"\nJob: {record['job'][0], record['job'][1]}"
+      f"\nAge: {record['age']}")
+record['job'].append('Janitor')
+
+print(record['job'])
 
 
 
