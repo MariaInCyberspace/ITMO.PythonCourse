@@ -209,9 +209,10 @@ record = {
     'age': 34
 }
 
-print(f"\nFull name: {record['name']['first_name'], record['name']['last_name']}"
-      f"\nJob: {record['job'][0], record['job'][1]}"
+print(f"\nFull name: \"{record['name']['first_name']} {record['name'].get('last_name')}\""
+      f"\nJob: {record['job'][0]}, {record['job'][1]}"
       f"\nAge: {record['age']}")
+
 record['job'].append('Janitor')
 
 print(record['job'])
