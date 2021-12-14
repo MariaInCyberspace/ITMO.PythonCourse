@@ -148,3 +148,64 @@ for i in range(0, 10):
 print("New list unsorted:", new_list)
 new_list.sort(reverse=True)
 print("New list sorted in reverse order:", new_list)
+
+
+### TUPLES ###
+
+print(dir(tuple))
+help(tuple.count)
+help(tuple.index)
+
+my_tuple = (2, 98, 87, 4, 3, 8, 1)
+print("My tuple, element at index 4:", my_tuple.index(4))
+
+# Get a new tuple by adding another to the original one
+new_tuple = my_tuple.__add__((6,))
+print("After adding:", new_tuple)
+
+# Make a list based on the tuple
+my_tuple_to_list = list(my_tuple)
+print(type(my_tuple_to_list))
+my_tuple_to_list.remove(98)
+my_tuple_to_list.append(43)
+print(my_tuple_to_list)
+
+
+
+### DICTIONARIES ###
+
+my_dictionary = {'food': 'Apple',
+                 'quantity': 4,
+                 'colour': 'Red'}
+
+
+print(f"Value stored under 'food' key: {my_dictionary['food']}")
+print(f"Value stored under 'quantity' key: {my_dictionary['quantity']}")
+print(f"Value stored under 'colour' key: {my_dictionary['colour']}")
+
+# Change values in the dictionary
+my_dictionary['colour'] = 'Coral'
+my_dictionary['quantity'] += 4
+
+print(my_dictionary)
+
+# Fill an empty dictionary
+another_dict = {}
+print("Enter your name")
+name = str(input())
+another_dict['Name']= name
+print("Enter your age")
+age = int(input())
+another_dict['Age'] = age
+
+print(another_dict)
+
+
+
+
+
+
+
+
+
+
