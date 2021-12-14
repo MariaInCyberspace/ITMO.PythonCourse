@@ -136,7 +136,15 @@ print("Before:", list1)
 list1.remove(remove_me)
 print("After:", list1)
 
+# Sorting the list
+sorted_list = sorted(list1, reverse=True)
+print("Unsorted list:", list1)
+print("Sorted list:", sorted_list)
 
+new_list = []
+for i in range(0, 10):
+    new_list.append(random.randint(0, 100))
 
-
-
+print("New list unsorted:", new_list)
+new_list.sort(reverse=True)
+print("New list sorted in reverse order:", new_list)
