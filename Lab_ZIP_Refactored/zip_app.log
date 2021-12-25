@@ -1,0 +1,110 @@
+21-12-25 11:22:26: main - INFO - Received command loc
+21-12-25 11:22:55: main - INFO - Received command zip
+21-12-25 11:23:31: main - INFO - Received command dist
+21-12-25 11:23:40: main - INFO - Received the first ZIP 32801
+21-12-25 11:23:46: main - INFO - Received the second ZIP 32803
+21-12-25 11:23:51: main - INFO - Received command end
+21-12-25 14:02:20: main - INFO - Получена команда район
+21-12-25 14:02:54: main - INFO - Получена команда индекс
+21-12-25 14:03:13: main - INFO - Получена команда расстояние
+21-12-25 14:03:19: main - INFO - Получен первый индекс 101000
+21-12-25 14:03:22: main - INFO - Получен второй индекс 123001
+21-12-25 14:03:29: main - INFO - Получена команда финиш
+21-12-25 14:05:11: main - INFO - Received command loc
+21-12-25 14:06:21: main - INFO - Received command loc
+21-12-25 14:06:36: main - INFO - Received command zip
+21-12-25 14:06:46: main - INFO - Received command end
+21-12-25 14:07:18: main - INFO - Получена команда район
+21-12-25 14:07:28: main - INFO - Получена команда индекс
+21-12-25 14:07:41: main - INFO - Получена команда финиш
+21-12-25 14:19:28: main - INFO - Получена команда район
+21-12-25 14:20:17: main - INFO - Получена команда район
+21-12-25 14:21:17: main - INFO - Получена команда индекс
+21-12-25 14:21:30: main - INFO - Получена команда индекс
+21-12-25 14:22:51: main - INFO - Получена команда финиш
+21-12-25 14:46:36: main - INFO - Получена команда расстояние
+21-12-25 14:46:41: main - INFO - Получен первый индекс 101000
+21-12-25 14:46:44: main - INFO - Получен второй индекс 123001
+21-12-25 14:49:23: main - INFO - Получена команда расстояние
+21-12-25 14:49:28: main - INFO - Получен первый индекс 101000
+21-12-25 14:49:31: main - INFO - Получен второй индекс 123001
+21-12-25 14:51:33: main - INFO - Получена команда финиш
+21-12-25 14:57:32: main - INFO - Получена команда расстояние
+21-12-25 14:57:36: main - INFO - Получен первый индекс 123001
+21-12-25 14:57:41: main - INFO - Получен второй индекс 101000
+21-12-25 15:24:06: main - INFO - Получена команда район
+21-12-25 15:24:16: main - INFO - Получена команда индекс
+21-12-25 15:24:38: main - INFO - Получена команда расстояние
+21-12-25 15:25:59: main - INFO - Получена команда расстояние
+21-12-25 15:26:05: main - INFO - Получен первый индекс 123001
+21-12-25 15:26:09: main - INFO - Получен второй индекс 101000
+21-12-25 15:26:18: main - INFO - Получена команда финиш
+21-12-25 15:26:47: main - INFO - Получена команда  расстояние
+21-12-25 15:34:21: main - INFO - Получена команда район
+21-12-25 15:34:30: main - INFO - Получена команда расстояние
+21-12-25 15:34:34: main - INFO - Получен первый индекс 101000
+21-12-25 15:34:37: main - INFO - Получен второй индекс 123001
+21-12-25 15:34:43: main - INFO - Получена команда финиш
+21-12-25 15:36:00: main - INFO - Received command dist
+21-12-25 15:36:05: main - INFO - Received the first ZIP 32963
+21-12-25 15:36:18: main - INFO - Received the second ZIP 32965
+21-12-25 15:36:25: main - INFO - Received command end
+21-12-25 15:49:33: main - INFO - Получена команда яз
+21-12-25 15:50:28: main - INFO - Получена команда яз
+21-12-25 15:50:32: main - INFO - Received command lang
+21-12-25 15:50:42: main - INFO - Получена команда индекс
+21-12-25 15:50:55: main - INFO - Получена команда яз
+21-12-25 15:51:01: main - INFO - Received command loc
+21-12-25 15:51:13: main - INFO - Received command end
+21-12-25 15:51:22: main - INFO - Получена команда финиш
+21-12-25 15:51:27: main - INFO - Received command end
+21-12-25 15:51:33: main - INFO - Получена команда финиш
+21-12-25 15:52:29: main - INFO - Получена команда яз
+21-12-25 15:52:33: main - INFO - Received command loc
+21-12-25 15:52:42: main - INFO - Received command end
+21-12-25 15:52:57: main - INFO - Received command lanf
+21-12-25 15:52:59: main - INFO - Received command lang
+21-12-25 15:53:06: main - INFO - Получена команда район
+21-12-25 15:53:14: main - INFO - Получена команда яз
+21-12-25 15:53:18: main - INFO - Received command land
+21-12-25 15:53:20: main - INFO - Received command lang
+21-12-25 15:53:27: main - INFO - Получена команда индекс
+21-12-25 15:53:35: main - INFO - Получена команда финиш
+21-12-25 16:00:22: main - INFO - Получена команда район
+21-12-25 16:00:31: main - INFO - Получена команда яз
+21-12-25 16:00:37: main - INFO - Received command zip
+21-12-25 16:00:47: main - INFO - Received command lang
+21-12-25 16:00:51: main - INFO - Получена команда яз
+21-12-25 16:00:56: main - INFO - Received command end
+21-12-25 16:01:06: main - INFO - Получена команда яз
+21-12-25 16:01:09: main - INFO - Received command lang
+21-12-25 16:01:11: main - INFO - Получена команда яз
+21-12-25 16:01:14: main - INFO - Received command lang
+21-12-25 16:01:17: main - INFO - Получена команда яз
+21-12-25 16:01:19: main - INFO - Received command loc
+21-12-25 16:01:27: main - INFO - Received command end
+21-12-25 16:01:39: main - INFO - Получена команда индекс
+21-12-25 16:01:53: main - INFO - Получена команда яз
+21-12-25 16:02:06: main - INFO - Received command lang
+21-12-25 16:02:11: main - INFO - Получена команда финиш
+21-12-25 16:21:16: main - INFO - Received command zip
+21-12-25 16:21:41: main - INFO - Received command end
+21-12-25 16:27:59: main - INFO - Received command zip
+21-12-25 16:52:41: main - INFO - Received command 58737
+21-12-25 16:52:46: main - INFO - Received command loc
+21-12-25 16:53:08: main - INFO - Received command zip
+21-12-25 17:00:09: main - INFO - Received command zip
+21-12-25 17:00:24: main - INFO - Received command end
+21-12-25 17:04:55: main - INFO - Получена команда индекс
+21-12-25 17:23:04: main - INFO - Получена команда индекс
+21-12-25 17:23:16: main - INFO - Получена команда яз
+21-12-25 17:23:20: main - INFO - Received command lang
+21-12-25 17:23:24: main - INFO - Получена команда яз
+21-12-25 17:23:28: main - INFO - Received command ebd
+21-12-25 17:23:32: main - INFO - Received command end
+21-12-25 17:25:44: main - INFO - Received command zip
+21-12-25 17:29:59: main - INFO - Received command zip
+21-12-25 17:30:25: main - INFO - Received command lang
+21-12-25 17:30:41: main - INFO - Получена команда 111394
+21-12-25 17:30:49: main - INFO - Получена команда индекс
+21-12-25 17:31:00: main - INFO - Получена команда финиш
