@@ -3,9 +3,26 @@ import datetime
 import model as m
 import literals as lit
 import view as v
+import logging
+import logging.handlers
 
 
 new_purchases = []
+
+
+rfh = logging.handlers.RotatingFileHandler(
+        filename='view.log',
+        mode='a',
+        maxBytes=5 * 1024 * 1024,
+        backupCount=9,
+        encoding=None,
+        delay=0
+)
+
+logging.basicConfig(format='%(asctime)s: %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO, datefmt="%y-%m-%d %H:%M:%S",
+                    handlers=[rfh])
+logger = logging.getLogger('main')
 
 
 def handle_new_purchase(purchases):
@@ -29,7 +46,7 @@ while command != lit.EXIT_COMMAND:
     if command == lit.SHOW_ALL_COMMAND:
         all_purchases = m.read_file()
         how_to_proceed = input(lit.HOW_TO_ORDER_LIST_FOR_VIEWING)
-        v.display_purchases(all_purchases, how_to_proceed)
+        v.display_purchases(all_purchases, how_to_proceed, logger)
     if command == lit.ADD_COMMAND:
         handle_new_purchase(new_purchases)
     command = input(lit.CONTINUE_PROMPT)
