@@ -17,7 +17,9 @@ def write_to_file(purchases):
             csvwriter.writerow(row)
 
 
-def read_file(purchases):
+def read_file(purchases=None):
+    if purchases is None:
+        purchases = []
     all_purchases = purchases[:]
     with open(lit.FILENAME, 'r') as purchases_csv:
         for line in purchases_csv.read().split("\n"):
@@ -56,6 +58,6 @@ while command != lit.EXIT_COMMAND:
     print()
 if command == lit.EXIT_COMMAND:
     write_to_file(new_expenses)
-    all_purchases = read_file(new_expenses)
+    all_purchases = read_file()
     how_to_proceed = input(lit.HOW_TO_ORDER_LIST_FOR_VIEWING)
     v.display_purchases(all_purchases, how_to_proceed)
