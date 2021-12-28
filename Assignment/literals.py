@@ -25,14 +25,14 @@ COST_PROMPT = "How much did it cost?\n"
 DATE_PROMPT = "When did you make the purchase? (dd.mm.yyyy)\n"
 
 CONTINUE_PROMPT = "Would you like to continue?\n\t" \
-                  f"'{SHOW_ALL_COMMAND}':view differently\n\t" \
+                  f"'{SHOW_ALL_COMMAND}': view list\n\t" \
                   f"'{ADD_COMMAND}': add items\n\t" \
                   f"'{DELETE_COMMAND}': delete list\n\t" \
                   f"'{EXIT_COMMAND}': exit the program\n"
 
 AFTER_VIEWING_PROMPT = "What is it that you'd like to do?\n\t" \
                        f"'{DELETE_COMMAND}': delete list\n\t" \
-                       f"'{SHOW_ALL_COMMAND}':view differently\n\t" \
+                       f"'{SHOW_ALL_COMMAND}': view list\n\t" \
                        f"'{ADD_COMMAND}': add item\n\t" \
                        f"'{EXIT_COMMAND}': exit the program\n"
 
@@ -46,7 +46,7 @@ HOW_TO_ORDER_LIST_FOR_VIEWING = "How would you like to view your list?\n\t" \
                                 f"'{BY_CATEGORY}' to view by category\n\t" \
                                 f"'{BY_PRICE}' to view by price\n\t" \
                                 f"'{BY_DATE}' to view by date\n\t" \
-                                f"{SHOW_ALL_COMMAND} to view raw\n"
+                                f"'{SHOW_ALL_COMMAND}' to view raw\n"
 
 FILENAME = "purchases.csv"
 
