@@ -30,6 +30,8 @@ CATEGORY_NOT_FOUND = 'No such category. Please try again'
 
 PURCHASES_FOR_DATE_NOT_FOUND = 'No purchases for this date. Please try again'
 
+NO_PURCHASES_WITH_THIS_ID_FOUND = "No purchases with this ID were found. Please try again"
+
 WHAT_PURCHASED_PROMPT = "What else have you purchased recently?\n"
 
 CATEGORY_PROMPT = "What category would you put this item in?\n"
@@ -72,3 +74,5 @@ DATE_FORMAT = "%d-%m-%Y"
 DATE_FORMAT_FOR_READING = '%Y-%m-%d %H:%M:%S'
 
 INCORRECT_DATE_MESSAGE = "Incorrect date"
+
+INCORRECT_ID_MESSAGE = "Incorrect ID"

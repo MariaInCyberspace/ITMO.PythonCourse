@@ -30,6 +30,16 @@ def find_max_id(purchases):
     return max_p
 
 
+def check_id(p_id):
+    is_valid = True
+    try:
+        int(p_id)
+    except ValueError:
+        v.display_info(lit.INCORRECT_ID_MESSAGE)
+        is_valid = False
+    return is_valid
+
+
 def check_date(date_entered):
     date_str = date_entered.replace(".", "-")
     is_valid = True
@@ -37,7 +47,6 @@ def check_date(date_entered):
         datetime.datetime.strptime(date_str, lit.DATE_FORMAT)
     except ValueError:
         is_valid = False
-    if not is_valid:
         v.display_info(lit.INCORRECT_DATE_MESSAGE)
     return is_valid
 
@@ -78,9 +87,12 @@ def run_app():
             how_to_proceed = lit.SHOW_ALL_COMMAND
             v.display_purchases(all_purchases, how_to_proceed, logger)
             id_to_delete = input(lit.DELETE_PROMPT)
-            m.delete_purchase(id_to_delete)
-            all_purchases = m.read_file()
-            v.display_purchases(all_purchases, how_to_proceed, logger)
+            if check_id(id_to_delete):
+                if m.delete_purchase(id_to_delete):
+                    all_purchases = m.read_file()
+                    v.display_purchases(all_purchases, how_to_proceed, logger)
+                else:
+                    v.display_info(lit.NO_PURCHASES_WITH_THIS_ID_FOUND)
         if command == lit.FILTER_BY_CATEGORY:
             category = input(lit.FILTER_BY_CATEGORY_PROMPT)
             filtered = m.filter_by_category(category)

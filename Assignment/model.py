@@ -28,15 +28,19 @@ def write_to_file(purchases):
 
 
 def delete_purchase(p_id):
+    is_present = False
     all_purchases = read_file()
     for p in all_purchases:
         if p.p_id == p_id:
             all_purchases.remove(p)
-    with open(lit.FILENAME, 'w') as altered_file:
-        csvwriter = csv.writer(altered_file)
-        for p in all_purchases:
-            row = [p.p_id, p.name, p.category, p.price, p.date]
-            csvwriter.writerow(row)
+            is_present = True
+    if is_present:
+        with open(lit.FILENAME, 'w') as altered_file:
+            csvwriter = csv.writer(altered_file)
+            for p in all_purchases:
+                row = [p.p_id, p.name, p.category, p.price, p.date]
+                csvwriter.writerow(row)
+    return is_present
 
 
 def filter_by_category(category):
