@@ -40,6 +40,16 @@ def check_id(p_id):
     return is_valid
 
 
+def check_price(price):
+    is_valid = True
+    try:
+        float(price)
+    except ValueError:
+        v.display_info(lit.INCORRECT_PRICE_MESSAGE)
+        is_valid = False
+    return is_valid
+
+
 def check_date(date_entered):
     date_str = date_entered.replace(".", "-")
     is_valid = True
@@ -62,10 +72,11 @@ def handle_new_purchase(purchases):
     p_id = find_max_id(all_purch) + 1
     name = input(lit.WHAT_PURCHASED_PROMPT).title()
     category = input(lit.CATEGORY_PROMPT).title()
-    price = round(float(input(lit.COST_PROMPT).replace(",", ".")), 2)
+    price_str = input(lit.COST_PROMPT).replace(",", ".")
     date_str = input(lit.DATE_PROMPT)
-    if check_date(date_str):
+    if check_date(date_str) & check_price(price_str):
         date = convert_to_date(date_str)
+        price = round(float(price_str), 2)
         new_purchase = m.Purchase(p_id, name, category, price, date)
         purchases.append(new_purchase)
         m.write_to_file(purchases)

@@ -41,24 +41,24 @@ COST_PROMPT = "How much did it cost?\n"
 DATE_PROMPT = "When did you make the purchase? (dd.mm.yyyy)\n"
 
 CONTINUE_PROMPT = "\nWould you like to continue?\n\t" \
-                  f"'{SHOW_ALL_COMMAND}':view list\n\t" \
-                  f"'{FILTER_BY_CATEGORY}': filter by specified category / '{FILTER_BY_DATE}': filter by specified date\n\t" \
+                  f"'{SHOW_ALL_COMMAND}': view list\n\t" \
+                  f"'{FILTER_BY_CATEGORY}' / '{FILTER_BY_DATE}': filter by specified category or date\n\t" \
                   f"'{ADD_COMMAND}': add items\n\t" \
                   f"'{DELETE_COMMAND}': delete item\n\t" \
                   f"'{EXIT_COMMAND}': exit the program\n"
 
 VIEW_LIST_PROMPT = f"\nWhat would you like to do?\n\t" \
                    f"'{SHOW_ALL_COMMAND}': view list\n\t" \
-                   f"'{FILTER_BY_CATEGORY}': filter by specified category / '{FILTER_BY_DATE}': filter by specified date\n\t" \
+                   f"'{FILTER_BY_CATEGORY}' / '{FILTER_BY_DATE}': filter by specified category or date\n\t" \
                    f"'{ADD_COMMAND}': add purchase\n\t" \
                    f"'{DELETE_COMMAND}': delete item\n\t" \
                    f"'{EXIT_COMMAND}':exit\n"
 
 HOW_TO_ORDER_LIST_FOR_VIEWING = "How would you like to view your list?\n\t" \
-                                f"'{BY_NAME}' to view in alphabetical order / '{BY_NAME_DESC}' - descending\n\t" \
-                                f"'{BY_CATEGORY}' to view by category / '{BY_CATEGORY_DESC}' - descending \n\t" \
-                                f"'{BY_PRICE}' to view by price / '{BY_PRICE_DESC}' - descending \n\t" \
-                                f"'{BY_DATE}' to view by date / '{BY_DATE_DESC}' - descending \n\t" \
+                                f"'{BY_NAME}' / '{BY_NAME_DESC}': in alphabetical order (ascending / descending)\n\t" \
+                                f"'{BY_CATEGORY}' / '{BY_CATEGORY_DESC}': by category (ascending / descending)\n\t" \
+                                f"'{BY_PRICE}' / '{BY_PRICE_DESC}': by price (ascending / descending)\n\t" \
+                                f"'{BY_DATE}' / '{BY_DATE_DESC}': by date (ascending / descending)\n\t" \
                                 f"'{SHOW_ALL_COMMAND}' to view raw\n"
 
 DELETE_PROMPT = "Enter ID of a purchase you would like to delete:\n"
@@ -76,3 +76,5 @@ DATE_FORMAT_FOR_READING = '%Y-%m-%d %H:%M:%S'
 INCORRECT_DATE_MESSAGE = "Incorrect date"
 
 INCORRECT_ID_MESSAGE = "Incorrect ID"
+
+INCORRECT_PRICE_MESSAGE = "Incorrect price"
